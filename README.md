@@ -14,7 +14,6 @@ You can choose from the following web browsers for testing:
 You can select one of the following environments:
 - `dev` (Development)
 - `qa` (Quality Assurance)
-- `user.test` (User Acceptance Testing)
 
 ### Test Suite Files
 
