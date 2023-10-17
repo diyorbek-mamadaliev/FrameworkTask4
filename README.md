@@ -26,23 +26,19 @@ There are two test suite files available:
 ### Positive Testing
 
 To run positive tests, use the following command in the terminal:
-```bash
-mvn test -Dbrowser=<BROWSER> -Denvironment=<ENVIRONMENT> -Dsurefire.suiteXmlFiles=src/test/resources/<SUITE_XML_FILE>
-```
+
 Example:
 ```bash
-mvn test -Dbrowser=chrome -Denvironment=dev -Dsurefire.suiteXmlFiles=src/test/resources/testing-all.xml
+mvn -Dbrowser=chrome -Denvironment=dev -Dsurefire.suiteXmlFiles=src/test/resources/testing-all.xml clean test
 ```
 
 ### Negative Testing
 
 To run negative tests, use the following command in the terminal:
-```bash
-mvn test -Dbrowser=<BROWSER> -Denvironment=<ENVIRONMENT> -Dsurefire.suiteXmlFiles=src/test/resources/<SUITE_XML_FILE>
-```
+
 Example:
 ```bash
-mvn test -Dbrowser=chrome -Denvironment=qa -Dsurefire.suiteXmlFiles=src/test/resources/testing-all.xml
+mvn -Dbrowser=chrome -Denvironment=qa -Dsurefire.suiteXmlFiles=src/test/resources/testing-all.xml clean test
 ```
 
 ## Test Configuration
